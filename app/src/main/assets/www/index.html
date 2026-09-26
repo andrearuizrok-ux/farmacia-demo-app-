@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0f7a65">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Farmacia DEMO — App</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="desktop-stage">
+    <div class="phone-shell">
+      <div class="app-top">
+        <div class="brand-mini">
+          <span class="cross">✚</span>
+          <div>
+            <strong>Farmacia DEMO</strong>
+            <small>Concept app cliente</small>
+          </div>
+        </div>
+        <button class="round-btn" id="notifBtn" aria-label="Notifiche">◔<span class="dot"></span></button>
+      </div>
+
+      <main id="app"></main>
+
+      <nav class="bottom-nav">
+        <button data-route="home"><span>⌂</span><small>Home</small></button>
+        <button data-route="shop"><span>▦</span><small>Prodotti</small></button>
+        <button data-route="services"><span>♡</span><small>Servizi</small></button>
+        <button data-route="orders"><span>▤</span><small>Ordini</small></button>
+        <button data-route="profile"><span>◎</span><small>Profilo</small></button>
+      </nav>
+    </div>
+
+    <aside class="presentation-panel">
+      <span class="eyebrow">Proposta NOMYRA</span>
+      <h1>Demo App<br>Farmacia</h1>
+      <p>Una possibile esperienza mobile per fidelizzare il cliente e semplificare richieste, servizi e comunicazioni.</p>
+      <div class="feature-list">
+        <div><b>01</b><span>Ricette e richieste</span></div>
+        <div><b>02</b><span>Prenotazione servizi</span></div>
+        <div><b>03</b><span>Ordini e ritiro</span></div>
+        <div><b>04</b><span>Fidelity e coupon</span></div>
+        <div><b>05</b><span>Promemoria e notifiche</span></div>
+      </div>
+      <div class="demo-note">
+        <strong>Demo, non progetto finale.</strong>
+        <p>Nome, logo, colori, contenuti e funzioni verranno definiti con il cliente.</p>
+      </div>
+    </aside>
+  </div>
+
+  <dialog id="modal" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div>
+          <span class="eyebrow" id="modalEyebrow">Dettaglio</span>
+          <h2 id="modalTitle">Titolo</h2>
+        </div>
+        <button class="round-btn" onclick="closeModal()">×</button>
+      </div>
+      <div id="modalBody"></div>
+    </div>
+  </dialog>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
