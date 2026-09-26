@@ -1,0 +1,18 @@
+FARMACIA DEMO — CLOUDFLARE READY
+
+Questa versione è volutamente GENERICA.
+Serve per presentare il progetto al cliente senza far sembrare che il sito sia già stato
+creato specificamente per la sua farmacia.
+
+CARICAMENTO
+1. Cloudflare Dashboard
+2. Workers & Pages
+3. Create application
+4. Pages / Direct Upload / Drag & Drop
+5. Nome suggerito: farmacia-demo
+6. Carica questo ZIP
+7. Deploy
+
+Non serve NPM.
+Non serve build.
+index.html è nella radice dello ZIP.
